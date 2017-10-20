@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="info">
+<Configuration status="debug">
     <Properties>
         <Property name="log-path">logs</Property>
     </Properties>
@@ -19,11 +19,11 @@
             <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %logger{36} - %msg%n"/>
         </Console>
     </Appenders>
-    <Loggers>
-        <Logger name="co.pissarra" level="info" additivity="true">
-            <appender-ref ref="file-log" level="info"/>
+    <Loggers >
+        <Logger name="co.pissarra" additivity="true">
+            <appender-ref ref="file-log" level="debug"/>
         </Logger>
-        <Root level="info" additivity="true">
+        <Root level="debug">
             <appender-ref ref="console"/>
         </Root>
     </Loggers>

@@ -40,6 +40,9 @@
       <excludeFolder url="file://$MODULE_DIR$/../../build" />
       <excludeFolder url="file://$MODULE_DIR$/../../out" />
     </content>
+    <content url="file://$MODULE_DIR$/../../build/generated/source/kapt/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../build/generated/source/kapt/main" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.4-3" level="project" />

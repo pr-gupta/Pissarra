@@ -1,15 +1,14 @@
 package co.pissarra.spark.handler
 
-import spark.ModelAndView
+import co.pissarra.spark.VelocityUtil
+import co.pissarra.util.TemplatePath
 import spark.Request
 import spark.Response
-import spark.template.velocity.VelocityTemplateEngine
-import co.pissarra.util.TemplatePath
 
 class Login {
     companion object {
-        val getLoginPage = { req: Request, res: Response ->
-            VelocityTemplateEngine().render(ModelAndView(HashMap<String, Any>(), TemplatePath.GET_LOGIN_PAGE))
+        val getLoginPage = { _: Request, _: Response ->
+            VelocityUtil.render(HashMap(), TemplatePath.GET_LOGIN_PAGE)
         }
     }
 }

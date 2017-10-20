@@ -5,7 +5,7 @@ buildscript {
     ext {
         kotlin_version = '1.1.4-3'
         spark_kotlin_version = '1.0.0-alpha'
-        slf4j_version = '1.8.0-alpha2'
+        log4j2_version = '2.9.1'
     }
 
     repositories {
@@ -28,7 +28,8 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
     compile "com.sparkjava:spark-kotlin:$spark_kotlin_version"
-    compile "org.slf4j:slf4j-simple:$slf4j_version"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: "$log4j2_version"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: "$log4j2_version"
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

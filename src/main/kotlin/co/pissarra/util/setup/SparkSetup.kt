@@ -11,7 +11,7 @@ class SparkSetup {
     val logger = LogManager.getLogger(SparkSetup::javaClass)
 
     fun init() {
-        port(8080)
+        port(3389)
         staticFileLocation("/public")
         setupPath()
     }

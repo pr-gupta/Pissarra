@@ -7,7 +7,7 @@ import spark.kotlin.port
 import javax.inject.Inject
 
 
-class SparkSetup @Inject constructor(val port: Int) {
+class SparkSetup @Inject constructor(private val port: Int) {
 
     private val logger = LogManager.getLogger(SparkSetup::javaClass)!!
 

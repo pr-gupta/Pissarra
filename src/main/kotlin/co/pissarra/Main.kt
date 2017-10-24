@@ -6,7 +6,7 @@ import org.apache.logging.log4j.LogManager
 
 fun main(args: Array<String>) {
 
-    if(args.size < 1) {
+    if (args.size < 1) {
         LogManager.getLogger().error("Insufficient arguments provided. " +
                 "\n\tFollowing are the required arguments.\n" +
                 "\t\t1. port-number - Port Number to start spark")

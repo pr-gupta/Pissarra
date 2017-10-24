@@ -19,7 +19,7 @@
             <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %logger{36} - %msg%n"/>
         </Console>
     </Appenders>
-    <Loggers >
+    <Loggers>
         <Logger name="co.pissarra" additivity="true">
             <appender-ref ref="file-log" level="debug"/>
         </Logger>

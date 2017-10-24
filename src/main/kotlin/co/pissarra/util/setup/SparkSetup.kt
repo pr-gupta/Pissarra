@@ -4,14 +4,15 @@ import co.pissarra.spark.handler.Login
 import org.apache.logging.log4j.LogManager
 import spark.Spark.*
 import spark.kotlin.port
+import javax.inject.Inject
 
 
-class SparkSetup {
+class SparkSetup @Inject constructor(val port: Int) {
 
-    val logger = LogManager.getLogger(SparkSetup::javaClass)
+    private val logger = LogManager.getLogger(SparkSetup::javaClass)!!
 
     fun init() {
-        port(3389)
+        port(port)
         staticFileLocation("/public")
         setupPath()
     }

@@ -6,11 +6,11 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Module
-class SetUpModule {
+class SetUpModule(private val port: Int) {
+
     @Provides
     @Singleton
-    fun provideSparkSetup() : SparkSetup {
-        return SparkSetup()
+    fun provideSparkSetup(): SparkSetup {
+        return SparkSetup(port)
     }
-
 }
